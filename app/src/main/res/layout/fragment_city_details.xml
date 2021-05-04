@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.cities_list.CitiesListFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cityDetailsWeatherIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/top_line"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cityDetailsLocationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_placeholder"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/top_line"
+        app:layout_constraintBottom_toTopOf="@+id/cityDetailsGeneralWeatherTitle"
+        tools:text="my location - location" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cityDetailsGeneralWeatherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawablePadding="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/cityDetailsLocationTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cityDetailsCurrentTempTitle"
+        tools:text="fine day good day" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cityDetailsCurrentTempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityDetailsGeneralWeatherTitle"
+        tools:text="22" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

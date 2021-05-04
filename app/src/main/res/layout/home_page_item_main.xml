@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="340dp"
+    android:background="@drawable/general_border">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="dd-mm-yyyy" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/timeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableStart="@drawable/ic_clock"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="08:10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/locationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:drawableStart="@drawable/ic_placeholder"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateTitle"
+        tools:text="my location - location" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/locationMsgTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="12sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTitle"
+        tools:text="my location - location" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/minMaxTempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:drawableStart="@drawable/ic_temp"
+        android:drawablePadding="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationMsgTitle"
+        tools:text="20 -30" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/currentTempTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="@+id/minMaxTempTitle"
+        app:layout_constraintStart_toStartOf="@+id/minMaxTempTitle"
+        app:layout_constraintTop_toBottomOf="@+id/minMaxTempTitle"
+        tools:text="22" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/weatherIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/generalWeatherTitle"
+        app:layout_constraintEnd_toStartOf="@+id/generalWeatherTitle"
+        app:layout_constraintTop_toTopOf="@+id/generalWeatherTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/generalWeatherTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="10dp"
+        android:drawablePadding="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="fine day good day" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/feelLikeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/fragment_home_page_main_item_feels_like_title"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/dateTitle"
+        tools:text="feels like 22" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

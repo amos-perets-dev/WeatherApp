@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginBottom="20dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/additionalDetailsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/fragment_home_page_additional_details_item_main_title_text"
+        android:textColor="@color/darkGray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Additional Details" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/windTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/generalBackground"
+        android:shadowRadius="4"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cloudinessTitle"
+        app:layout_constraintStart_toStartOf="@+id/additionalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/additionalDetailsTitle"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="windTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/cloudinessTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/generalBackground"
+        android:shadowRadius="4"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/humidityTitle"
+        app:layout_constraintStart_toStartOf="@+id/additionalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/windTitle"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="cloudinessTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/humidityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/generalBackground"
+        android:shadowRadius="4"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pressureTitle"
+        app:layout_constraintStart_toStartOf="@+id/additionalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/cloudinessTitle"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="humidityTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pressureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/generalBackground"
+        android:shadowRadius="4"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/visibilityTitle"
+        app:layout_constraintStart_toStartOf="@+id/additionalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/humidityTitle"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="pressureTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/visibilityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/generalBackground"
+        android:shadowRadius="4"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/additionalDetailsTitle"
+        app:layout_constraintTop_toBottomOf="@+id/pressureTitle"
+        app:layout_constraintVertical_chainStyle="spread"
+        tools:text="visibilityTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

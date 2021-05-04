@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="temp_symbol">%1$s°</string>
+
+    <string name="fragment_home_page_main_item_feels_like_title">Feels like %1$s°</string>
+    <string name="fragment_home_page_hourly_item_main_title_title">Hourly</string>
+
+    <string name="fragment_home_page_sunrise_sunset_item_main_title_text">Sunrise &amp; Sunset</string>
+
+    <string name="fragment_home_page_sunrise_sunset_item_sunrise_title_text">Sunrise: %1$s</string>
+    <string name="fragment_home_page_sunrise_sunset_item_sunset_item_title_text">Sunset: %1$s</string>
+    <string name="fragment_home_page_sunrise_sunset_item_length_day_title_text">Length of day: %1$s</string>
+
+    <string name="fragment_home_page_additional_details_item_main_title_text">Additional Details</string>
+    <string name="fragment_home_page_additional_details_item_wind_title_text">Wind: %1$s km/h</string>
+    <string name="fragment_home_page_additional_details_item_cloudiness_title_text">Cloudiness: %1$s</string>
+    <string name="fragment_home_page_additional_details_item_humidity_title_text">Humidity: %1$s </string>
+    <string name="fragment_home_page_additional_details_item_pressure_title_text">Pressure: %1$s hPa</string>
+    <string name="fragment_home_page_additional_details_item_visibility_title_text">Visibility: %1$s km</string>
+
+    <string name="fahrenheit_title_name">Fahrenheit</string>
+    <string name="celsius_title_name">Celsius</string>
+
+    <string name="fragment_cities_list_text_hint_text">Search…</string>
+    <string name="general_dialog_yes_btn_title_text">Yes, Delete</string>
+    <string name="general_dialog_no_btn_title_text">Cancel</string>
+    <string name="general_dialog_main_title_text">
+        Are you sure you want to delete the <![CDATA[<font color=#17B7DF>%1$s</font>]]>
+        </string>
+
+    <string name="internet_error_text">Internet is unavailable. please check the internet access and try again later</string>
+    <string name="general_error_text">Oops…something went wrong please try later</string>
+    <string name="general_error_close_text">CLOSE</string>
+    <string name="approximate_location">Approximate location, check the location service</string>
+    <string name="default_location">Default location, Check the location permission or service</string>
+    <string name="current_location"> </string>
+
+</resources>

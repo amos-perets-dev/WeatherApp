@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/general_dialog_shape">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:textColor="@color/darkGray"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Test Test Test" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/yesBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/general_dialog_yes_btn_shape"
+        android:gravity="center"
+        android:text="@string/general_dialog_yes_btn_title_text"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/noBtn"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="@+id/start_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle"
+        app:layout_constraintWidth_percent="0.7" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:padding="5dp"
+        app:indicatorColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/yesBtn"
+        app:layout_constraintEnd_toEndOf="@+id/yesBtn"
+        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintStart_toStartOf="@+id/yesBtn"
+        app:layout_constraintTop_toTopOf="@+id/yesBtn"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/noBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/general_dialog_no_btn_title_text"
+        android:textColor="@color/darkGray"
+        android:textSize="20sp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/start_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/yesBtn"
+        app:layout_constraintWidth_percent="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
